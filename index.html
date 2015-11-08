@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Player</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+	Hello world.
+<!--	<audio 
+		autoplay
+		loop='loop'
+		controls='controls'>
+		<source src="resources/audio.mp3" type="audio/mp3">
+		<source src="resources/audio.ogg" type="audio/ogg">
+		Your browser doesn't support audio.
+	</audio>-->
+	<div class='player'>
+		<video 
+			width='800'>
+			<source src="resources/video.mp4" type="video/mp4">
+			<source src="resources/video.ogv" type="video/ogg">
+			<source src="resources/video.webm" type="video/webm">
+		</video>
+		
+		<div class="tools">
+			<div class='bar'>
+				<div class="cursor"></div>
+			</div>
+			<button class="pause line"></button>
+			<button class="volume line">
+			</button>
+			<div class="volume-bar line">
+				<div class="volume-cursor"></div>
+			</div>
+			<button class="fullScreen right line"></button>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>

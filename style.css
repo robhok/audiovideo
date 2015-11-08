@@ -1,0 +1,107 @@
+body {
+	background: #eee;
+	font-family: Helvetica, Arial;
+	font-size: 14px;
+}
+
+.player button {
+	border:none;
+}
+
+.player {
+	width: 800px;
+	position: relative;
+}
+
+.tools {
+	z-index: 999999999999;
+	position: absolute;
+	bottom:3px;
+	right: 0;
+	left: 0;
+	background: rgb(37, 37, 47);
+	width: 800px;
+	height: 30px;
+	font-size: 0;
+}
+
+.bar {
+	width: 800px;
+	height: 10px;
+	border: 1px solid;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.line {
+	display: inline-block;
+	
+}
+
+.volume {
+	width: 30px;
+	height: 20px;
+	background: url('resources/speaker.png') no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	background-position: center;
+}
+
+.volume:hover > .volume-bar {
+	display: block;
+}
+
+.volume-bar {
+	width: 50px;
+	border-radius: 3px;
+	height: 5px;
+	background: #fff;
+	vertical-align: top;
+	margin: 7.5px 0;
+	
+}
+
+.fullScreen {
+	width: 30px;
+	height: 20px;
+	background: url('resources/fullscreen-icon.png') no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	background-position: center;
+}
+
+.play {
+	width: 30px;
+	height: 20px;
+	background: url('resources/pause.png') no-repeat;
+	-webkit-background-size:contain;
+	background-size:contain;
+	background-position: center;
+}
+
+.pause {
+	width: 30px;
+	height: 20px;
+	background: url('resources/play.png') no-repeat;
+	-webkit-background-size:contain;
+	background-size:contain;
+	background-position: center;
+}
+
+.cursor {
+	width: 0%;
+	height: 100%;
+	background-color: blue;
+}
+
+.cursor::after {
+	content: 'oklm';
+	width: 20px;
+	height: 20px;
+	background-color: red;
+}
+
+video::-webkit-media-controls {
+  display:none !important;
+}
